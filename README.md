@@ -183,7 +183,7 @@ During this project, I learned:
 * How to render dynamic pages using EJS
 * How to use Git and GitHub for version control
 
----
+
 
 ## Future Improvements
 
@@ -198,15 +198,5 @@ There are still several things I would like to improve in Wanderlust:
 * More responsive UI
 * Deployment using a cloud database and hosting service
 
----
 
-## Why I Built This Project
-
-I built Wanderlust as a practical way to understand **full-stack web development** beyond just learning individual technologies.
-
-Instead of working with separate examples, I wanted to bring together **backend development, databases, authentication, authorization, validation, file uploads, and server-side rendering** into one complete application.
-
-It helped me understand how these technologies communicate with each other in a real-world project.
-
----
 
