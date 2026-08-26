@@ -1,4 +1,4 @@
-# Wanderlust 🌍
+# Wanderlust 
 
 Wanderlust is a full-stack web application for exploring and managing property listings. Users can browse available properties, view listing details, and add their own properties.
 
