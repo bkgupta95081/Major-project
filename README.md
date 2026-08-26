@@ -1,25 +1,25 @@
-# Wanderlust 
+# Wanderlust 🌍
 
-Wanderlust is a full-stack web application for exploring and managing property listings. Users can browse available properties, view individual listing details, and add their own listings.
+Wanderlust is a full-stack web application for exploring and managing property listings. Users can browse available properties, view listing details, and add their own properties.
 
-The application is built using **Node.js, Express.js, MongoDB, Mongoose, and EJS**. It also includes user authentication, authorization, form validation, image uploads, sessions, and flash messages.
+I built this project using **Node.js, Express.js, MongoDB, Mongoose, and EJS**. It helped me gain practical experience in building a complete web application with authentication, CRUD operations, validation, sessions, and image uploads.
 
 ## About the Project
 
-The main goal of Wanderlust is to provide a simple platform for managing vacation property listings.
+The idea behind Wanderlust is to create a simple platform where users can find and manage vacation property listings.
 
 Users can:
 
-* Browse available property listings
-* View details of a particular property
+* Browse available properties
+* View details of a property
 * Create a new listing
-* Edit their listings
-* Delete their listings
+* Edit a listing
+* Delete a listing
 * Register and log in
 * Upload images for listings
-* Receive success and error messages
+* Get success and error messages
 
-Authentication and authorization are used to control access to protected features.
+The application also uses authentication and authorization to protect certain actions.
 
 ## Features
 
@@ -29,7 +29,7 @@ Authentication and authorization are used to control access to protected feature
 * User logout
 * Session management using Express Session
 * Authentication using Passport.js
-* Authorization for protected operations
+* Authorization for protected actions
 
 ### Property Listings
 
@@ -38,17 +38,17 @@ Authentication and authorization are used to control access to protected feature
 * Create new listings
 * Edit existing listings
 * Delete listings
-* Display property images
+* Add images to listings
 * Display property information and price
 
 ### Form Validation
 
 * Server-side validation using Joi
-* Validation of listing data before saving it to the database
+* Validation before saving listing data to the database
 
 ### Image Upload
 
-* Image upload functionality using Multer
+* Image upload using Multer
 
 ### User Experience
 
@@ -103,10 +103,13 @@ Major-project/
 └── README.md
 ```
 
-* **`models/`** – Contains the Mongoose models used for database operations.
-* **`views/`** – Contains the EJS templates used to render the application's pages.
-* **`init/`** – Contains initialization or seed-related files.
-* **`app.js`** – Main application file where the Express server and application configuration are handled.
+### Main folders and files
+
+* **`init/`** – Contains files used for initializing or adding sample data.
+* **`models/`** – Contains the Mongoose models used to work with MongoDB.
+* **`views/`** – Contains the EJS templates used to display the application pages.
+* **`app.js`** – Main application file where the Express server and routes are configured.
+* **`package.json`** – Contains project information and required dependencies.
 
 ## How to Run the Project
 
@@ -116,7 +119,7 @@ Major-project/
 git clone https://github.com/bkgupta95081/Major-project.git
 ```
 
-### 2. Navigate to the project directory
+### 2. Navigate to the project folder
 
 ```bash
 cd Major-project
@@ -140,7 +143,7 @@ node app.js
 
 ### 6. Open the application
 
-Open your browser and visit:
+Open your browser and go to:
 
 ```text
 http://localhost:8080
@@ -148,35 +151,40 @@ http://localhost:8080
 
 ## Database
 
-The project uses **MongoDB** for storing application data and **Mongoose** for interacting with the database.
+This project uses **MongoDB** to store application data and **Mongoose** to interact with the database.
 
-The database stores information related to users and property listings.
+The database is used to store information about users and property listings.
 
 ## What I Learned
 
-While developing this project, I gained practical experience with:
+While working on this project, I learned how different parts of a full-stack application work together.
 
-* Building a web server using Express.js
-* Connecting Node.js applications with MongoDB
+Some of the main things I learned are:
+
+* Creating a server using Express.js
+* Connecting Node.js with MongoDB
 * Creating Mongoose schemas and models
-* Implementing CRUD operations
+* Performing CRUD operations
 * Creating and handling Express routes
 * Working with middleware
 * Implementing authentication using Passport.js
 * Managing user sessions
 * Implementing authorization
-* Validating user input using Joi
-* Handling image uploads using Multer
+* Validating data using Joi
+* Uploading images using Multer
 * Rendering dynamic pages using EJS
 * Using Git and GitHub for version control
 
 ## Future Improvements
 
+Some features I would like to add in the future are:
+
 * Search and filtering
+* Reviews and ratings
 * Booking functionality
 * Payment integration
+* Map integration
 * Improved error handling
 * More responsive UI
 * Deployment using a cloud database and hosting service
-
 
