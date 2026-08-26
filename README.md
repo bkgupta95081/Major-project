@@ -1,25 +1,12 @@
-# Wanderlust 
+# Wanderlust
 
-Wanderlust is a full-stack web application for exploring and managing property listings. Users can browse available properties, view listing details, and add their own properties.
+**Wanderlust** is a full-stack web application where users can explore vacation properties and manage their own property listings.
 
-I built this project using **Node.js, Express.js, MongoDB, Mongoose, and EJS**. It helped me gain practical experience in building a complete web application with authentication, CRUD operations, validation, sessions, and image uploads.
+I built this project to get hands-on experience with **Node.js, Express.js, MongoDB, Mongoose, EJS, authentication, CRUD operations, validation, sessions, and image uploads**.
 
-## About the Project
+The main idea was to build a simple platform where users can discover properties and also create and manage their own listings.
 
-The idea behind Wanderlust is to create a simple platform where users can find and manage vacation property listings.
-
-Users can:
-
-* Browse available properties
-* View details of a property
-* Create a new listing
-* Edit a listing
-* Delete a listing
-* Register and log in
-* Upload images for listings
-* Get success and error messages
-
-The application also uses authentication and authorization to protect certain actions.
+---
 
 ## Features
 
@@ -27,34 +14,38 @@ The application also uses authentication and authorization to protect certain ac
 
 * User registration and login
 * User logout
-* Session management using Express Session
 * Authentication using Passport.js
+* Session management using Express Session
 * Authorization for protected actions
 
 ### Property Listings
 
-* View all listings
-* View individual listing details
+* View all available properties
+* View individual property details
 * Create new listings
 * Edit existing listings
 * Delete listings
-* Add images to listings
+* Upload images for properties
 * Display property information and price
 
 ### Form Validation
 
 * Server-side validation using Joi
-* Validation before saving listing data to the database
+* Validate listing data before saving it to MongoDB
 
 ### Image Upload
 
-* Image upload using Multer
+* Upload property images using Multer
+* Display uploaded images with listing information
 
 ### User Experience
 
-* Flash messages for success and error notifications
+* Success messages using Flash
+* Error messages for failed operations
 * Dynamic pages using EJS
 * Reusable layouts using EJS-Mate
+
+---
 
 ## Technologies Used
 
@@ -89,43 +80,49 @@ The application also uses authentication and authorization to protect certain ac
 * Cookie Parser
 * Method Override
 
+---
+
 ## Project Structure
 
 ```text
 Major-project/
 │
-├── init/
-├── models/
-├── views/
-├── app.js
-├── package.json
+├── init/                 # Sample/initial data
+├── models/               # Mongoose models
+├── views/                # EJS templates
+├── app.js                # Main application file
+├── package.json          # Project dependencies
 ├── package-lock.json
 └── README.md
 ```
 
-### Main folders and files
+### Important Files & Folders
 
 * **`init/`** – Contains files used for initializing or adding sample data.
-* **`models/`** – Contains the Mongoose models used to work with MongoDB.
-* **`views/`** – Contains the EJS templates used to display the application pages.
-* **`app.js`** – Main application file where the Express server and routes are configured.
-* **`package.json`** – Contains project information and required dependencies.
+* **`models/`** – Contains Mongoose schemas and models used to interact with MongoDB.
+* **`views/`** – Contains EJS templates used to render the application's pages.
+* **`app.js`** – Main application file where the Express server, middleware, routes, and database connection are configured.
+* **`package.json`** – Contains project information, scripts, and dependencies.
 
-## How to Run the Project
+---
 
-### 1. Clone the repository
+## Getting Started
+
+Follow these steps to run Wanderlust locally.
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/bkgupta95081/Major-project.git
 ```
 
-### 2. Navigate to the project folder
+### 2. Move Into the Project
 
 ```bash
 cd Major-project
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 npm install
@@ -133,58 +130,83 @@ npm install
 
 ### 4. Start MongoDB
 
-Make sure MongoDB is running on your system.
+Make sure MongoDB is installed and running on your system.
 
-### 5. Start the application
+### 5. Start the Application
 
 ```bash
 node app.js
 ```
 
-### 6. Open the application
+### 6. Open in Browser
 
-Open your browser and go to:
+Visit:
 
 ```text
 http://localhost:8080
 ```
 
+---
+
 ## Database
 
-This project uses **MongoDB** to store application data and **Mongoose** to interact with the database.
+Wanderlust uses **MongoDB** as the database and **Mongoose** to communicate with MongoDB.
 
-The database is used to store information about users and property listings.
+The database stores information such as:
+
+* User accounts
+* Property listings
+* Listing images
+* Property details
+
+Mongoose schemas help define the structure of the data and make it easier to perform database operations.
+
+---
 
 ## What I Learned
 
-While working on this project, I learned how different parts of a full-stack application work together.
+Building Wanderlust helped me understand how the different parts of a web application work together.
 
-Some of the main things I learned are:
+During this project, I learned:
 
-* Creating a server using Express.js
-* Connecting Node.js with MongoDB
-* Creating Mongoose schemas and models
-* Performing CRUD operations
-* Creating and handling Express routes
-* Working with middleware
-* Implementing authentication using Passport.js
-* Managing user sessions
-* Implementing authorization
-* Validating data using Joi
-* Uploading images using Multer
-* Rendering dynamic pages using EJS
-* Using Git and GitHub for version control
+* How to build a server using Express.js
+* How to connect Node.js with MongoDB
+* How to create Mongoose schemas and models
+* How CRUD operations work
+* How to create and handle Express routes
+* How middleware works in Express
+* How authentication works using Passport.js
+* How authorization protects user actions
+* How sessions and cookies work
+* How to validate data using Joi
+* How to handle image uploads using Multer
+* How to render dynamic pages using EJS
+* How to use Git and GitHub for version control
+
+---
 
 ## Future Improvements
 
-Some features I would like to add in the future are:
+There are still several things I would like to improve in Wanderlust:
 
 * Search and filtering
 * Reviews and ratings
 * Booking functionality
 * Payment integration
 * Map integration
-* Improved error handling
+* Better error handling
 * More responsive UI
 * Deployment using a cloud database and hosting service
+
+---
+
+## Why I Built This Project
+
+I built Wanderlust as a practical way to understand **full-stack web development** beyond just learning individual technologies.
+
+Instead of working with separate examples, I wanted to bring together **backend development, databases, authentication, authorization, validation, file uploads, and server-side rendering** into one complete application.
+
+It helped me understand how these technologies communicate with each other in a real-world project.
+
+---
 
